@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: currentColor;
+            mask-position: center center;
+        }
+
+        .icon-heart {
+            mask-image: url("./heart-icon.svg");
+        }
+
+        .icon-user {
+            mask-image: url("./user-icon.svg");
+        }
+
+        .color-red {
+            color: red;
+        }
+
+        .color-blue {
+            color: dodgerblue;
+        }
+
+        .color-green {
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Пример перекрашивания иконки в цвет текста (currentColor)
+    <br>c помощью css свойства mask-image</h3>
+
+
+<div class="color-red">
+    <div class="icon icon-heart"></div>
+
+    Блок с красным цветом текста
+</div>
+
+<div class="color-blue">
+    <div class="icon icon-user"></div>
+
+    Блок с красным цветом текста
+</div>
+
+<div class="color-green">
+    <div class="icon icon-heart"></div>
+
+    Блок с зеленым цветом текста
+</div>
+
+
+
+</body>
+</html>

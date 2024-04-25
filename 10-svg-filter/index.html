@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .color-red {
+            color: red;
+        }
+
+        .color-blue {
+            color: dodgerblue;
+        }
+
+        .color-green {
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Пример перекрашивания иконки в цвет текста (currentColor)
+    <br>c помощью svg фильтров</h3>
+
+
+<div class="color-red">
+    <svg width="40" height="40">
+        <filter id="filter">
+            <feFlood flood-color="currentColor" />
+            <feComposite in2="SourceAlpha" operator="in" />
+        </filter>
+        <image width="40" height="40" href="./heart-icon.svg" filter="url(#filter)" />
+    </svg>
+
+    Блок с красным цветом текста
+</div>
+
+<div class="color-blue">
+    <svg width="40" height="40">
+        <filter id="filter2">
+            <feFlood flood-color="currentColor" />
+            <feComposite in2="SourceAlpha" operator="in" />
+        </filter>
+        <image width="40" height="40" href="./user-icon.svg" filter="url(#filter2)" />
+    </svg>
+
+    Блок с красным цветом текста
+</div>
+
+<div class="color-green">
+    <svg width="40" height="40">
+        <filter id="filter3">
+            <feFlood flood-color="currentColor" />
+            <feComposite in2="SourceAlpha" operator="in" />
+        </filter>
+        <image width="40" height="40" href="./heart-icon.svg" filter="url(#filter3)" />
+    </svg>
+
+    Блок с зеленым цветом текста
+</div>
+
+
+
+</body>
+</html>

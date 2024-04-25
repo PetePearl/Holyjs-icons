@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="js.js"></script>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Пример перекрашивания иконки, подключенной через тег img с применением css фильтров</h3>
+<p>
+    Пример найден тут <a href="https://codepen.io/sosuke/pen/Pjoqqp">https://codepen.io/sosuke/pen/Pjoqqp</a>
+    <br>и доработан для раскрашивания иконок
+</p>
+
+<table>
+    <tr valign="top">
+        <td width="50%">
+            <fieldset>
+                <p>
+                    <label>Target color</label> <input class="target" type="text" placeholder="target hex" value="#00a4d6"/>
+                </p>
+                <button class="execute">Раскрасить иконки</button>
+            </fieldset>
+            <p>Исходные иконки:</p>
+            <div class="">
+                <img src="./heart-icon.svg" alt="">
+                <img src="./user-icon.svg" alt="">
+            </div>
+
+            <p>Иконки, перекрашенные с применением css свойства <code>filter</code>:</p>
+            <div class="pixel filterPixel">
+                <img src="./heart-icon.svg" alt="">
+                <img src="./user-icon.svg" alt="">
+            </div>
+
+            <p class="filterDetail"></p>
+            <p class="lossDetail"></p>
+        </td>
+    </tr>
+</table>
+
+
+
+</body>
+</html>

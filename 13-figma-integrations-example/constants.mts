@@ -1,0 +1,17 @@
+import 'dotenv/config'
+
+export const FIGMA_BASE_URL = process.env.FIGMA_BASE_URL || ''
+export const FIGMA_PROJECT_ID = process.env.FIGMA_PROJECT_ID || ''
+export const FIGMA_ACCESS_TOKEN = process.env.FIGMA_ACCESS_TOKEN || ''
+export const FIGMA_ROOT_NODE_ID = process.env.FIGMA_ROOT_NODE_ID || ''
+export const SVG_FOLDER = process.env.SVG_FOLDER || ''
+export const TYPES_FOLDER = process.env.TYPES_FOLDER || ''
+export const MAX_BATCH_SIZE = +(process.env.MAX_BATCH_SIZE || '')
+export const SKIP_CACHED = process.env.SKIP_CACHED?.toLowerCase() === 'true'
+export const BUCKET_NAME = process.env.BUCKET_NAME || ''
+export const BUCKET_REGION = process.env.BUCKET_REGION || ''
+export const BUCKET_ENDPOINT = process.env.BUCKET_ENDPOINT || ''
+export const BUCKET_ACCESS_KEY_ID = process.env.BUCKET_ACCESS_KEY_ID || ''
+export const BUCKET_SECRET_ACCESS_KEY = process.env.BUCKET_SECRET_ACCESS_KEY || ''
+export const BUCKET_SVG_FOLDER = process.env.BUCKET_SVG_FOLDER || ''
+export const UPLOAD_FROM_FOLDER = process.env.UPLOAD_FROM_FOLDER || ''

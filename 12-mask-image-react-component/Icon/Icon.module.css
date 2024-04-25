@@ -1,0 +1,18 @@
+.icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: currentColor;
+    mask-position: center center;
+    flex-shrink: 0;
+}
+
+.icon__24 {
+    width: 24px;
+    height: 24px;
+}
+
+.icon__16 {
+    width: 16px;
+    height: 16px;
+}

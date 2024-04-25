@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Пример иконки в варианте svg-sprite с подключаемым файлом-спрайтом</h3>
+
+
+<span style="color: red">
+    <svg width="40" height="40" viewBox="0 0 512 512">
+        <use xlink:href="./svg-sprite.svg#icon-heart" />
+    </svg>
+</span>
+
+<svg width="40" height="40" viewBox="0 0 512 512">
+    <use xlink:href="./svg-sprite.svg#icon-user" />
+</svg>
+
+</body>
+</html>
